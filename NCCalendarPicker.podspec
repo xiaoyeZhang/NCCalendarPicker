@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name          = "NCCalendarPicker"
-  s.version       = "0.0.1"
+  s.version       = "0.0.2"
   s.summary       = "Public"
   s.description   = <<-DESC
                     日期选择器SDK

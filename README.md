@@ -1,5 +1,9 @@
 # NCCalendarPicker
 
+## 演示
+
+![preview.mp4](Images/preview.mp4)
+
 ## 安装
 
 ##### [CocoaPods](http://cocoapods.org/)是 Cocoa 项目的依赖管理器。您可以使用以下命令安装它：
@@ -33,3 +37,40 @@
     dependencies: [
     .package(url: "https://github.com/xiaoyeZhang/NCCalendarPicker.git", .upToNextMajor(from: "0.0.1"))
     ]
+
+## 使用
+
+日期选择器有两种模式 pickerStyle \= .datePicker / .singlePicker
+
+.datePicker 是选择当前日期加时分
+
+      let picker = NCCalendarPicker { (date: String, singlePickerStr: String) in
+          debugPrint(date)
+          debugPrint(singlePickerStr)
+          self.calendarDate.setTitle(date, for: .normal)
+      }
+      picker.pickerStyle = .datePicker
+      // 传入上次选择的时间
+      if let selectedDay = timeStrToConvertDate(dateStr: "2023-12-06 10:19", format: "yyyy-MM-dd HH:mm"){
+         picker.selectedDay = selectedDay
+      }
+      picker.show()
+
+.singlePicker 是选择当前日期加上/下午
+
+      let picker = NCCalendarPicker { (date: String, singlePickerStr: String) in
+          debugPrint(date)
+          debugPrint(singlePickerStr)
+          self.calendarSingle.setTitle(date + " " + singlePickerStr, for: .normal)
+      }
+      picker.pickerStyle = .singlePicker
+      picker.singlePickerDatas = ["上午","下午"]
+
+      // 传入上次选择的时间(默认是当前日期 + 上午)
+      let datePickerStr = "2023-12-06 上午"
+      var dateStr = datePickerStr.replacingOccurrences(of: " 上午", with: "")
+      dateStr = dateStr.replacingOccurrences(of: " 下午", with: "")
+      picker.selectedDay = timeStrToConvertDate(dateStr: dateStr, format: "yyyy-MM-dd")
+      picker.singleSelectedData = datePickerStr.replacingOccurrences(of: dateStr + " ", with: "")
+
+      picker.show()
