@@ -2,10 +2,10 @@
 Pod::Spec.new do |s|
 
   s.name          = "NCCalendarPicker"
-  s.version       = "0.0.2"
+  s.version       = "0.0.3"
   s.summary       = "Public"
   s.description   = <<-DESC
-                    日期选择器SDK
+                    日历+时间选择器SDK
                     DESC
   s.homepage      = "https://github.com/xiaoyeZhang/NCCalendarPicker.git"
   s.license       = "MIT"

@@ -5,6 +5,6 @@ target 'ZXYCalendarPicker' do
 
 use_frameworks!
 
-pod 'NCCalendarPicker'
+#pod 'NCCalendarPicker'
 
 end

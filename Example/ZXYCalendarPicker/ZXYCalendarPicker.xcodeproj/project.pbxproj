@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		CED8FAC12B200A97006A7D8D /* ZXYCalendarPicker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CED8FABF2B200A97006A7D8D /* ZXYCalendarPicker.xcdatamodeld */; };
 		CED8FAC32B200A98006A7D8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED8FAC22B200A98006A7D8D /* Assets.xcassets */; };
 		CED8FAC62B200A98006A7D8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED8FAC42B200A98006A7D8D /* LaunchScreen.storyboard */; };
+		CEDB48FA2B68DE41001F6964 /* NCCalendarPicker in Frameworks */ = {isa = PBXBuildFile; productRef = CEDB48F92B68DE41001F6964 /* NCCalendarPicker */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7FCAA62C33AA3AA5FE7139B /* Pods_ZXYCalendarPicker.framework in Frameworks */,
+				CEDB48FA2B68DE41001F6964 /* NCCalendarPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +107,6 @@
 				CED8FAAF2B200A97006A7D8D /* Sources */,
 				CED8FAB02B200A97006A7D8D /* Frameworks */,
 				CED8FAB12B200A97006A7D8D /* Resources */,
-				802B0ECFE49A7C8A7EEF359C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -113,6 +114,7 @@
 			);
 			name = ZXYCalendarPicker;
 			packageProductDependencies = (
+				CEDB48F92B68DE41001F6964 /* NCCalendarPicker */,
 			);
 			productName = ZXYCalendarPicker;
 			productReference = CED8FAB32B200A97006A7D8D /* ZXYCalendarPicker.app */;
@@ -143,6 +145,7 @@
 			);
 			mainGroup = CED8FAAA2B200A96006A7D8D;
 			packageReferences = (
+				CEDB48F82B68DE41001F6964 /* XCLocalSwiftPackageReference ".." */,
 			);
 			productRefGroup = CED8FAB42B200A97006A7D8D /* Products */;
 			projectDirPath = "";
@@ -187,23 +190,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		802B0ECFE49A7C8A7EEF359C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ZXYCalendarPicker/Pods-ZXYCalendarPicker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ZXYCalendarPicker/Pods-ZXYCalendarPicker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZXYCalendarPicker/Pods-ZXYCalendarPicker-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -436,6 +422,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		CEDB48F82B68DE41001F6964 /* XCLocalSwiftPackageReference ".." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../..;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CEDB48F92B68DE41001F6964 /* NCCalendarPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NCCalendarPicker;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		CED8FABF2B200A97006A7D8D /* ZXYCalendarPicker.xcdatamodeld */ = {

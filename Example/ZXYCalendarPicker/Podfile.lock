@@ -1,20 +1,3 @@
-PODS:
-  - NCCalendarPicker (0.0.1):
-    - SnapKit
-  - SnapKit (5.6.0)
-
-DEPENDENCIES:
-  - NCCalendarPicker
-
-SPEC REPOS:
-  trunk:
-    - NCCalendarPicker
-    - SnapKit
-
-SPEC CHECKSUMS:
-  NCCalendarPicker: 4f3960c7865b20b7d748ef2a34aeaa6fcabc60ae
-  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
-
-PODFILE CHECKSUM: cefad7a5668ea56b204140c8872c61603abf91ab
+PODFILE CHECKSUM: 1fd1cf2d14cf9bf3686a4428d7aa5ee058657f3e
 
 COCOAPODS: 1.14.2

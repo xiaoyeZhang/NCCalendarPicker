@@ -1,6 +1,0 @@
-framework module NCCalendarPicker {
-  umbrella header "NCCalendarPicker-umbrella.h"
-
-  export *
-  module * { export * }
-}

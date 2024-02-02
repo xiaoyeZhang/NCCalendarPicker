@@ -34,6 +34,19 @@ extension UIView {
     ///
     /// - Parameters:
     ///   - cornerRadius: 圆角半径
+    ///   - rectCorners: 指定切圆角的角(多个角)
+    func roundedCorners(cornerRadius: CGFloat?, rectCorners: [UIRectCorner] = []) {
+        var corners:UIRectCorner = UIRectCorner()
+        for rectCorner in rectCorners {
+            corners.insert(rectCorner)
+        }
+        self.roundedCorners(cornerRadius: cornerRadius, rectCorner: corners)
+    }
+    
+    /// 设置指定角的圆角
+    ///
+    /// - Parameters:
+    ///   - cornerRadius: 圆角半径
     ///   - rectCorner: 指定切圆角的角
     func roundedCorners(cornerRadius: CGFloat?, rectCorner: UIRectCorner?) {
         let path = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: rectCorner!, cornerRadii: CGSize(width: cornerRadius!, height: cornerRadius!))
