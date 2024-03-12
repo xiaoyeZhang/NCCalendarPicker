@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "nccalendarpicker",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/xiaoyeZhang/NCCalendarPicker.git",
+      "state" : {
+        "revision" : "a8ca6cd191b8b63ae8cdf7ade5ca2bc987507443",
+        "version" : "0.0.3"
+      }
+    },
+    {
       "identity" : "snapkit",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/SnapKit/SnapKit.git",

@@ -225,7 +225,7 @@ public class NCCalendarPicker: UIView, UIGestureRecognizerDelegate, CalendarView
         didSet {
             dateBtn.setTitleColor(dateBtnSelectedColor, for: UIControl.State.selected)
             timeBtn.setTitleColor(dateBtnSelectedColor, for: UIControl.State.selected)
-
+            dateLabel.textColor = dateBtnSelectedColor
         }
     }
     

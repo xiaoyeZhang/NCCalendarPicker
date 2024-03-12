@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		CED8FAC32B200A98006A7D8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED8FAC22B200A98006A7D8D /* Assets.xcassets */; };
 		CED8FAC62B200A98006A7D8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED8FAC42B200A98006A7D8D /* LaunchScreen.storyboard */; };
 		CEDB48FA2B68DE41001F6964 /* NCCalendarPicker in Frameworks */ = {isa = PBXBuildFile; productRef = CEDB48F92B68DE41001F6964 /* NCCalendarPicker */; };
+		CEDB48FD2B6CCF6F001F6964 /* NCCalendarPicker in Frameworks */ = {isa = PBXBuildFile; productRef = CEDB48FC2B6CCF6F001F6964 /* NCCalendarPicker */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 			files = (
 				C7FCAA62C33AA3AA5FE7139B /* Pods_ZXYCalendarPicker.framework in Frameworks */,
 				CEDB48FA2B68DE41001F6964 /* NCCalendarPicker in Frameworks */,
+				CEDB48FD2B6CCF6F001F6964 /* NCCalendarPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +117,7 @@
 			name = ZXYCalendarPicker;
 			packageProductDependencies = (
 				CEDB48F92B68DE41001F6964 /* NCCalendarPicker */,
+				CEDB48FC2B6CCF6F001F6964 /* NCCalendarPicker */,
 			);
 			productName = ZXYCalendarPicker;
 			productReference = CED8FAB32B200A97006A7D8D /* ZXYCalendarPicker.app */;
@@ -145,7 +148,7 @@
 			);
 			mainGroup = CED8FAAA2B200A96006A7D8D;
 			packageReferences = (
-				CEDB48F82B68DE41001F6964 /* XCLocalSwiftPackageReference ".." */,
+				CEDB48FB2B6CCF6E001F6964 /* XCRemoteSwiftPackageReference "NCCalendarPicker" */,
 			);
 			productRefGroup = CED8FAB42B200A97006A7D8D /* Products */;
 			projectDirPath = "";
@@ -423,16 +426,25 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		CEDB48F82B68DE41001F6964 /* XCLocalSwiftPackageReference ".." */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../..;
+/* Begin XCRemoteSwiftPackageReference section */
+		CEDB48FB2B6CCF6E001F6964 /* XCRemoteSwiftPackageReference "NCCalendarPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/xiaoyeZhang/NCCalendarPicker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		CEDB48F92B68DE41001F6964 /* NCCalendarPicker */ = {
 			isa = XCSwiftPackageProductDependency;
+			productName = NCCalendarPicker;
+		};
+		CEDB48FC2B6CCF6F001F6964 /* NCCalendarPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEDB48FB2B6CCF6E001F6964 /* XCRemoteSwiftPackageReference "NCCalendarPicker" */;
 			productName = NCCalendarPicker;
 		};
 /* End XCSwiftPackageProductDependency section */
